@@ -38,6 +38,18 @@
 	        			
 	        			<div  class="img-rounded  padding" style="background-color:white">
 	        				<form class="form " role="form">
+	        					 <div class="form-group ">
+	 								<label>select game</label>
+	    							 <div>
+	     								 <select class="form-control">
+	     								 	<option value="1">game 1</option>
+	     								 	<option value="2">game 2</option>
+	     								 	<option value="3">game 3</option>
+	     								 	<option value="4">game 4</option>
+	     								 </select>
+	    							</div>
+	 						 	 </div>
+ 					 	 		
  								 <div class="form-group ">
 	 								<label>select level</label>
 	    							 <div>

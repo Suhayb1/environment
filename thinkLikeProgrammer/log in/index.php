@@ -4,7 +4,7 @@ include('connect.php');
 $name=$_POST['username'];
 $pass=$_POST['pass'];
 
-$query="select username from user where username=? and password=?";
+$query="select name from users where name=? and password=?";
 $stmt=$con->prepare($query);
 $stmt->bind_param('ss',$name,$pass);
 $stmt->execute();

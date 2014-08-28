@@ -1,5 +1,5 @@
 <?php
- $con=new mysqli('localhost','root','','submission');
+ $con=new mysqli('localhost','root','','tlprogrammer');
  if(mysqli_connect_errno())
  {
     echo "failed to connect data base: ".mysqli_connect_error();   
