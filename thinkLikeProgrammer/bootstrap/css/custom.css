@@ -1,0 +1,26 @@
+﻿.headcolor{
+  background-color: #428bca;
+ 
+  }
+ .headerfont{
+	
+	font-family:Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+	font-style:oblique
+}
+.bodycolor{
+	
+	background:#428bca;
+	
+}
+.padding{
+	padding:30px;
+	
+}
+.margin-b-10{
+	margin-bottom:10px;
+}
+.margin-10{
+	
+	margin:10px;
+	
+}
