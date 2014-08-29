@@ -3,6 +3,7 @@
     session_start();
     include("log in/connect.php");
     $_SESSION['username']="??";
+    $_SESSION['admin']="??";
     session_destroy();
 
 ?>
@@ -30,7 +31,7 @@
                    </tr>
                   <tr><td>
                     <input type="submit" value="log in">
-                </tr></tr>
+                </tr>
                </table>
             
             </form>

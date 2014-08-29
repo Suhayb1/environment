@@ -1,5 +1,9 @@
 <?php
-
+session_start();
+if (!isset($_SESSION['admin']))
+{
+	header('Location: ../index.php');
+}
 ?>
 
 <!DOCTYPE html>
@@ -37,15 +41,15 @@
 	        			</div >
 	        			
 	        			<div  class="img-rounded  padding" style="background-color:white">
-	        				<form class="form " role="form">
+	        				<form class="form " action="getdata.php" method="post" role="form">
 	        					 <div class="form-group ">
 	 								<label>select game</label>
 	    							 <div>
-	     								 <select class="form-control">
-	     								 	<option value="1">game 1</option>
-	     								 	<option value="2">game 2</option>
-	     								 	<option value="3">game 3</option>
-	     								 	<option value="4">game 4</option>
+	     								 <select class="form-control" name="game-list">
+	     								 	<option value="game1">game 1</option>
+	     								 	<option value="game2">game 2</option>
+	     								 	<option value="game3">game 3</option>
+	     								 	<option value="game4">game 4</option>
 	     								 </select>
 	    							</div>
 	 						 	 </div>
@@ -53,7 +57,7 @@
  								 <div class="form-group ">
 	 								<label>select level</label>
 	    							 <div>
-	     								 <select class="form-control">
+	     								 <select class="form-control" name="level-list">
 	     								 	<option value="1">level 1</option>
 	     								 	<option value="2">level 2</option>
 	     								 	<option value="3">level 3</option>

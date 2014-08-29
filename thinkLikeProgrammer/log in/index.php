@@ -8,11 +8,19 @@ $query="select name from users where name=? and password=?";
 $stmt=$con->prepare($query);
 $stmt->bind_param('ss',$name,$pass);
 $stmt->execute();
-$stmt->bind_result($id);
+$stmt->bind_result($name);
 if($row=$stmt->fetch())
 {
-    $_SESSION['username']=$id;
-    header('Location:../home.php'); 
+	if($name=="admin")
+	{
+    	$_SESSION['admin']=$name;
+    	header('Location: ../controlpanel/index.php');
+   	}
+   	else 
+   	{
+   		$_SESSION['username']=$name;
+   	    header('Location:../home.php');
+   	} 
 }
 else
 {
