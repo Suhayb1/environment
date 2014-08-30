@@ -1,3 +1,0 @@
-checklogin.php if not found it sends me to login.php
-
-enable in levels didn't do it yet
